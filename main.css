@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Love+Light&family=Luxurious+Script&family=M+PLUS+1&family=Merienda&family=Noto+Nastaliq+Urdu&family=Overpass+Mono&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.header img{
+    position: absolute;
+    top: -40px;
+    left: -0px;
+    z-index: 1;
+}
+.resume img{
+    position: absolute;
+    top:10px;
+    left:80%;
+    z-index: 11;
+    transition: all .2s ease-in-out;
+}
+.resume img:hover{
+    transform: scale(0.9) ;
+}
+
+.Home{
+    width: 100%;
+    height: 100vh;
+    background-color: #0A2647 ;
+    overflow: hidden;
+    position: relative;
+}
+.rec{
+    width: 98px;
+    height: 1080px;
+    background-color:rgba(0, 0, 0, 0.06);
+    position:absolute;
+    border-left: 25px solid rgba(0, 0, 0, 0.25);
+    top: 0;
+    overflow: hidden;
+}
+
+.container{
+    background-color:rgba(255, 246, 246, 0.12);
+    width: 579px;
+    height: 1200px;
+    transform: rotate(4deg);
+    position: relative;
+    left: 75%;
+    margin: 0;
+    top: -25px;
+    border-left: 25px solid rgba(255, 246, 246, 0.12);
+    box-shadow: -20px 10px  20px rgba(0, 0, 0, 0.55);
+    overflow:hidden;
+    z-index: 1;
+
+}
+
+video{
+    height: 1200px;
+}
+
+.name{
+    width: 402px;
+    height: 305px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    font-family: 'Julius Sans One', sans-serif;
+}
+h2{
+    width: 402px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+h1{
+    width: 402px;
+    color: white;
+    text-align: center;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    filter: drop-shadow(5px 2px 0px black) drop-shadow(2px 2px 0px black);
+}
+p{
+    width: 402px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+.Links{
+    position: absolute;
+    top: 50%;
+    left: 38%;
+
+    
+}
+.Links a{
+    padding: 20px;
+    transition: all .5s ease-in-out;
+}
+.Links a :hover{
+    transform: scale(1.5) ;
+}
+.mail-down{
+    position: absolute;
+    top: 85%;
+    left: 30px;
+    
+}
+.mail-down a{
+    transform: all .5s ease-in-out;
+}
+.mail-down a :hover{
+    transform: scale(1.5) ;
+}
+.circle-btn{
+position:absolute;
+top: 90%;
+left: 35px;
+width: 40px;
+height: 40px;
+background-color: #ffffff75;
+border-radius: 50%;
+border: 2px solid green;
+box-shadow: 0px -10px  5px rgba(0, 0, 0, 0.55);
+transform: all .6s ease-in-out ;
+transform: rotate(180deg);
+}
+
+.circle-btn a{
+    position: absolute;
+    top:15px;
+    left: 8px;
+    
+
+}
+
+.circle-btn:hover{
+    background-color: aqua;
+    transform:rotate(0deg )  ;
+    transform: scale(1.2);
+    box-shadow: 0px 10px  5px rgba(0, 0, 0, 0.55);
+}
+
+
+/*-----skill-page------*/
+.skill-page{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-page h3{
+    font-size: 64px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: black;
+    position: absolute;
+    top: -245px;
+    left: 40%;
+    text-align: center;
+    letter-spacing: 22.5px;
+}
+.box-container1{
+    width: 283px;
+    height: 291px;
+    background-color: white;
+    position: absolute;
+    transition: all .6s ease-in-out;
+    left: 10%;
+    top: 23%;
+    border: 2px solid black;
+    display: flex;
+    cursor: pointer;
+    box-shadow:-20px 0px  0px rgb(0, 0, 0);
+}
+.box-container1 img{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.box-container2{
+    width: 283px;
+    height: 291px;
+    transition: all .6s ease-in-out;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    left: 35%;
+    top: 23%;
+    display: flex;
+    border: 2px solid black;
+    box-shadow:-20px 0px  0px rgb(0, 0, 0);
+}
+.box-container2 img{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.box-container3{
+    width: 283px;
+    display: flex;
+    height: 291px;
+    background-color: white;
+    transition: all .6s ease-in-out;
+    position: absolute;
+    left: 55%;
+    top: 23%;
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow:-20px 0px  0px rgb(0, 0, 0);
+}
+.box-container3 img{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.box-container4{
+    width: 283px;
+    height: 291px;
+    background-color: white;
+    position: absolute;
+    transition: all .6s ease-in-out;
+    left: 75%;
+    top: 23%;
+    display: flex;
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow:-20px 0px  0px rgb(0, 0, 0);
+}
+.box-container4 img{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.box-container5{
+    width: 283px;
+    height: 291px;
+    background-color: white;
+    transition: all .6s ease-in-out;
+    position: absolute;
+    cursor: pointer;
+    left: 20%;
+    top:60%;
+    display: flex;
+    border: 2px solid black;
+    box-shadow:-20px 0px  0px rgb(0, 0, 0);
+}
+.box-container5 img{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.box-container6{
+    width: 283px;
+    height: 291px;
+    transition: all .6s ease-in-out;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    display: flex;
+    border: 2px solid black;
+    box-shadow:-20px 0px  0px rgb(0, 0, 0);
+}
+.box-container6 img{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.box-container7{
+    width: 283px;
+    height: 291px;
+    transition: all .6s ease-in-out;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    left: 70%;
+    top: 60%;
+    display: flex;
+    border: 2px solid black;
+    box-shadow:-20px 0px  0px rgb(0, 0, 0);
+}
+.box-container7 img{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+.content1{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.box-container1:hover .overlay{
+    opacity: 0.8;
+}
+.box-container1:hover{
+    transform: scale(1.1);
+}
+.content2{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.box-container2:hover .overlay{
+    opacity: 0.8;
+}
+.box-container2:hover{
+    transform: scale(1.1);
+}
+.content3{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.box-container3:hover .overlay{
+    opacity: 0.8;
+}
+.box-container3:hover{
+    transform: scale(1.1);
+}
+.content4{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.box-container4:hover .overlay{
+    opacity: 0.8;
+}
+.box-container4:hover{
+    transform: scale(1.1);
+}
+.content5{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.box-container5:hover .overlay{
+    opacity: 0.8;
+}
+.box-container5:hover{
+    transform: scale(1.1);
+}
+.content6{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.box-container6:hover .overlay{
+    opacity: 0.8;
+}
+.box-container6:hover{
+    transform: scale(1.1);
+}
+.content7{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.box-container7:hover .overlay{
+    opacity: 0.8;
+}
+.box-container7:hover{
+    transform: scale(1.1);
+}
+.circle-btndown{
+    position:absolute;
+    left: 35px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff75;
+    border-radius: 50%;
+    border: 2px solid green;
+    box-shadow: 0px -10px  5px rgba(0, 0, 0, 0.55);
+    transform: all .6s ease-in-out ;
+    }
+    
+    .circle-btndown a{
+        position: absolute;
+        top:15px;
+        left: 8px;
+        
+    
+    }
+    
+    .circle-btndown:hover{
+        background-color:red;
+        transform: scale(1.2) rotate(180deg);
+        
+        box-shadow: 0px 10px  5px rgba(0, 0, 0, 0.55);
+    }
+    .reveal{
+        position: absolute;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 2s ease;
+    }
+    .reveal.active{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+/*----small screen-----*/
+@media only screen
+and (min-width: 1030px)
+and (max-width: 1366px) {
+    .Home{
+    height: 100vh;
+    }
+    .Links{
+        top: 60%;
+        left: 40%;
+    }
+    .mail-down{
+        top:80% ;
+    }
+    
+    .skill-page{
+        height: 100vh;
+    }
+    .skill-page h3{
+        font-size: 48px;
+    }
+    .box-container1 {
+        width: 181px;
+        height: 191px;
+    }
+    .box-container2 {
+        width: 181px;
+        height: 191px;
+    }
+    .box-container3 {
+        width: 181px;
+        height: 191px;
+    }
+    .box-container4 {
+        width: 181px;
+        height: 191px;
+    }
+    .box-container5 {
+        width: 181px;
+        height: 191px;
+    
+}
+.box-container6 {
+    width: 181px;
+    height: 191px;
+}
+.box-container7 {
+    width: 181px;
+    height: 191px;
+}
+.box-container1 img{
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+}
+.box-container2 img{
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+}
+.box-container3 img{
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+}
+.box-container4 img{
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+}
+.box-container5 img{
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+}
+.box-container6 img{
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+}
+.box-container7 img{
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+}
+.circle-btndown{
+  top: 195%;
+}
+}
+
+/*-----mobile------*/
+@media (min-width: 320px) and (max-width: 999px)
+{
+    .container{
+        width:250px;
+        height:100vh;
+        top:50%;
+        left:100px;
+        transform:rotate(50deg);
+    }
+      .rec{
+          width:30px;
+      }
+     .name{
+         top:40%;
+         left:80px;
+     }
+      h1{
+          width:260px;
+          font-size:24px;
+      }
+      h2{
+          width:260px;
+          font-size:12px;
+      }
+      p{
+          width:260px;
+          font-size:8px;
+      }
+      .Links{
+          top:56%;
+          left:95px
+      }
+      .Links a{
+          padding:10px;
+      }
+    .resume img{
+        width:70px;
+        height:20px;
+    }
+    .header img{
+        width:80px;
+        height:80px;
+        top:-20px;
+        left:-10px;
+    }
+    .mail-down{
+        top:80%;
+        left:5px;
+    }
+    .circle-btn{
+        left:10px;
+    }
+    .circle-btndown{
+        left:10px;
+    }
+    .skill-page h3{
+        font-size:35px;
+        left:25%;
+    }
+    .skill-page{
+        height:120vh;
+        display:flex;
+    }
+    .box-container1{
+        width:150px;
+        height:150px;
+        top:10%;
+    }
+    .box-container2{
+        width:150px;
+        height:150px;
+        left:59%;
+        top:10%;
+    }
+    .box-container3{
+        width:150px;
+        height:150px;
+        left:10%;
+        top:32%
+    }
+    .box-container4{
+        width:150px;
+        height:150px;
+        top:32%;
+        left:59%;
+    }
+    .box-container5{
+        width:150px;
+        height:150px;
+        top:54%;
+        left:10%;
+    }
+    .box-container6{
+        width:150px;
+        height:150px;
+        top:54%;
+        left:59%;
+    }
+    .box-container7{
+        width:150px;
+        height:150px;
+        top:74%;
+        left:40%;
+    }
+    .box-container1 img{
+        width:110px;
+        height:100px;
+        margin-top:30px;
+        margin-left:20px;
+    }
+    .box-container2 img{
+        width:110px;
+        height:100px;
+        margin-top:30px;
+        margin-left:20px;
+    }.box-container3 img{
+        width:110px;
+        height:100px;
+        margin-top:30px;
+        margin-left:20px;
+    }.box-container4 img{
+        width:110px;
+        height:100px;
+        margin-top:30px;
+        margin-left:20px;
+    }.box-container5 img{
+        width:110px;
+        height:100px;
+        margin-top:30px;
+        margin-left:20px;
+    }.box-container6 img{
+        width:110px;
+        height:100px;
+        margin-top:30px;
+        margin-left:20px;
+    }.box-container7 img{
+        width:110px;
+        height:100px;
+        margin-top:30px;
+        margin-left:20px;
+    }
+}
+
+/*-----tablet-----*/
+@media only screen and (min-width:321px)and (max-width:768px) {
+    .container{
+        transform:rotate(4deg);
+        top:-12px;
+        left:75%;
+        height:110vh;
+    }
+    .Home{
+        height:100vh;
+    }
+    .rec{
+        width:50px;
+        height:100vh;
+    }
+    .name{
+        top:35%;
+        left:6%;
+        width:100px;
+        height:300px;
+    }
+    h1{
+        width:500px;
+        font-size:38px;
+    }
+    h2{
+        width:500px;
+        font-size:24px;
+    }
+    p{
+        width:500px;
+        font-size:20px;
+    }
+    .Links{
+        left:25%;
+    }
+    .Links a{
+        padding:20px;
+    }
+    .header img{
+        width:120px;
+        height:120px;
+    }
+    .resume img{
+        width:100px;
+        height:30px;
+    }
+    .mail-down{
+        top:90%;
+    }
+    .circle-btn{
+        top:95%;
+    }
+    .skill-page{
+        height:100vh;
+    }
+    .skill-page h3{
+        font-size:48px;
+        top:-430px;
+        left:30%;
+    }
+    .box-container1{
+        width:190px;
+        height:180px;
+    }
+    .box-container2{
+        width:190px;
+        height:180px;
+    }
+    .box-container3{
+        width:190px;
+        height:180px;
+    }
+    .box-container4{
+        width:190px;
+        height:180px;
+    }
+    .box-container5{
+        width:190px;
+        height:180px;
+    }
+    .box-container6{
+        width:190px;
+        height:180px;
+    }
+    .box-container7{
+        width:190px;
+        height:180px;
+    }
+    .box-container1 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container2 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container3 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container4 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container5 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container6 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container7 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .circle-btndown {
+        top:193%;
+    }  
+}

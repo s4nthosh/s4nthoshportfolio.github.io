@@ -1,0 +1,37 @@
+let h1 = document.getElementById('h1');
+        let h2 = document.getElementById('h2');
+        let h3 = document.getElementById('h3');
+        let p = document.getElementById('p');
+        let links = document.getElementById('links');
+        let mail = document.getElementById('mail');
+        
+
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            h1.style.marginLeft =  value * 5 + 'px';
+            h2.style.marginLeft = value * 1 +'px'
+            p.style.marginLeft = value * 0.5 +'px'
+            links.style.marginTop = value * 1 + 'px'
+            h3.style.marginTop = value * .4 + 'px'
+            mail.style.marginTop = value * 4 + 'px'
+            
+        })
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i=0;i<reveals.length;i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 100;
+
+                if(revealtop<windowheight-revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
