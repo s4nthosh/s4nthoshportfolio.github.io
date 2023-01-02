@@ -506,6 +506,135 @@ and (max-width: 1366px) {
 }
 }
 
+/*-----tablet-----*/
+@media (min-width:321px)and (max-width:768px) {
+    .container{
+        transform:rotate(4deg);
+        top:-12px;
+        left:75%;
+        height:110vh;
+    }
+    .Home{
+        height:100vh;
+    }
+    .rec{
+        width:50px;
+        height:100vh;
+    }
+    .name{
+        top:35%;
+        left:6%;
+        width:100px;
+        height:300px;
+    }
+    h1{
+        width:500px;
+        font-size:38px;
+    }
+    h2{
+        width:500px;
+        font-size:24px;
+    }
+    p{
+        width:500px;
+        font-size:20px;
+    }
+    .Links{
+        left:25%;
+    }
+    .Links a{
+        padding:20px;
+    }
+    .header img{
+        width:120px;
+        height:120px;
+    }
+    .resume img{
+        width:100px;
+        height:30px;
+    }
+    .mail-down{
+        top:90%;
+    }
+    .circle-btn{
+        top:95%;
+    }
+    .skill-page{
+        height:100vh;
+    }
+    .skill-page h3{
+        font-size:48px;
+        top:-430px;
+        left:30%;
+    }
+    .box-container1{
+        width:190px;
+        height:180px;
+    }
+    .box-container2{
+        width:190px;
+        height:180px;
+    }
+    .box-container3{
+        width:190px;
+        height:180px;
+    }
+    .box-container4{
+        width:190px;
+        height:180px;
+    }
+    .box-container5{
+        width:190px;
+        height:180px;
+    }
+    .box-container6{
+        width:190px;
+        height:180px;
+    }
+    .box-container7{
+        width:190px;
+        height:180px;
+    }
+    .box-container1 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container2 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container3 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container4 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container5 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container6 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .box-container7 img{
+        width:150px;
+        height:150px;
+        margin-top:20px;
+    }
+    .circle-btndown {
+        top:193%;
+    }  
+}
+
 /*-----mobile------*/
 @media (min-width: 320px) and (max-width: 999px)
 {
@@ -650,131 +779,3 @@ and (max-width: 1366px) {
     }
 }
 
-/*-----tablet-----*/
-@media only screen and (min-width:321px)and (max-width:768px) {
-    .container{
-        transform:rotate(4deg);
-        top:-12px;
-        left:75%;
-        height:110vh;
-    }
-    .Home{
-        height:100vh;
-    }
-    .rec{
-        width:50px;
-        height:100vh;
-    }
-    .name{
-        top:35%;
-        left:6%;
-        width:100px;
-        height:300px;
-    }
-    h1{
-        width:500px;
-        font-size:38px;
-    }
-    h2{
-        width:500px;
-        font-size:24px;
-    }
-    p{
-        width:500px;
-        font-size:20px;
-    }
-    .Links{
-        left:25%;
-    }
-    .Links a{
-        padding:20px;
-    }
-    .header img{
-        width:120px;
-        height:120px;
-    }
-    .resume img{
-        width:100px;
-        height:30px;
-    }
-    .mail-down{
-        top:90%;
-    }
-    .circle-btn{
-        top:95%;
-    }
-    .skill-page{
-        height:100vh;
-    }
-    .skill-page h3{
-        font-size:48px;
-        top:-430px;
-        left:30%;
-    }
-    .box-container1{
-        width:190px;
-        height:180px;
-    }
-    .box-container2{
-        width:190px;
-        height:180px;
-    }
-    .box-container3{
-        width:190px;
-        height:180px;
-    }
-    .box-container4{
-        width:190px;
-        height:180px;
-    }
-    .box-container5{
-        width:190px;
-        height:180px;
-    }
-    .box-container6{
-        width:190px;
-        height:180px;
-    }
-    .box-container7{
-        width:190px;
-        height:180px;
-    }
-    .box-container1 img{
-        width:150px;
-        height:150px;
-        margin-top:20px;
-    }
-    .box-container2 img{
-        width:150px;
-        height:150px;
-        margin-top:20px;
-    }
-    .box-container3 img{
-        width:150px;
-        height:150px;
-        margin-top:20px;
-    }
-    .box-container4 img{
-        width:150px;
-        height:150px;
-        margin-top:20px;
-    }
-    .box-container5 img{
-        width:150px;
-        height:150px;
-        margin-top:20px;
-    }
-    .box-container6 img{
-        width:150px;
-        height:150px;
-        margin-top:20px;
-    }
-    .box-container7 img{
-        width:150px;
-        height:150px;
-        margin-top:20px;
-    }
-    .circle-btndown {
-        top:193%;
-    }  
-}
