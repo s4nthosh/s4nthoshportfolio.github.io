@@ -150,35 +150,29 @@ transform: rotate(180deg);
     width: 100%;
     height: 100vh;
     background-color: white;
-    position: relative;
-    overflow: hidden;
 }
 
 .skill-page h3{
     font-size: 64px;
     font-family: 'Julius Sans One', sans-serif;
     color: black;
-    position: absolute;
-    top: -19px;
-    left: 40%;
     text-align: center;
     letter-spacing: 22.5px;
 }
-.total-con{
-    background-color:white;
+.con{
     width: 100%;
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;   
 }
-.box-container1{
+.box-container1 {
     width: 283px;
     height: 291px;
     background-color: white;
-    position: absolute;
     transition: all .6s ease-in-out;
-    left: 10%;
-    top: 23%;
     border: 2px solid black;
-    display: flex;
+    margin: 20px;
     cursor: pointer;
     box-shadow:-20px 0px  0px rgb(0, 0, 0);
 }
@@ -186,109 +180,92 @@ transform: rotate(180deg);
     margin-left: 20px;
     margin-top: 25px;
 }
-.box-container2{
+.box-container2 {
     width: 283px;
     height: 291px;
-    transition: all .6s ease-in-out;
-    cursor: pointer;
     background-color: white;
-    position: absolute;
-    left: 35%;
-    top: 23%;
-    display: flex;
+    transition: all .6s ease-in-out;
     border: 2px solid black;
+    margin: 20px;
+    cursor: pointer;
     box-shadow:-20px 0px  0px rgb(0, 0, 0);
 }
+
 .box-container2 img{
     margin-left: 20px;
     margin-top: 25px;
 }
-.box-container3{
+.box-container3 {
     width: 283px;
-    display: flex;
     height: 291px;
     background-color: white;
     transition: all .6s ease-in-out;
-    position: absolute;
-    left: 55%;
-    top: 23%;
-    cursor: pointer;
     border: 2px solid black;
+    margin: 20px;
+    cursor: pointer;
     box-shadow:-20px 0px  0px rgb(0, 0, 0);
 }
 .box-container3 img{
     margin-left: 20px;
     margin-top: 25px;
 }
-.box-container4{
+.box-container4 {
     width: 283px;
     height: 291px;
     background-color: white;
-    position: absolute;
     transition: all .6s ease-in-out;
-    left: 75%;
-    top: 23%;
-    display: flex;
-    cursor: pointer;
     border: 2px solid black;
+    margin: 20px;
+    cursor: pointer;
     box-shadow:-20px 0px  0px rgb(0, 0, 0);
 }
 .box-container4 img{
     margin-left: 20px;
     margin-top: 25px;
 }
-
-.box-container5{
+.box-container5 {
     width: 283px;
     height: 291px;
     background-color: white;
     transition: all .6s ease-in-out;
-    position: absolute;
-    cursor: pointer;
-    left: 20%;
-    top:60%;
-    display: flex;
     border: 2px solid black;
+    margin: 20px;
+    cursor: pointer;
     box-shadow:-20px 0px  0px rgb(0, 0, 0);
 }
 .box-container5 img{
     margin-left: 20px;
     margin-top: 25px;
 }
-.box-container6{
+.box-container6 {
     width: 283px;
     height: 291px;
-    transition: all .6s ease-in-out;
-    cursor: pointer;
     background-color: white;
-    position: absolute;
-    left: 45%;
-    top: 60%;
-    display: flex;
+    transition: all .6s ease-in-out;
     border: 2px solid black;
+    margin: 20px;
+    cursor: pointer;
     box-shadow:-20px 0px  0px rgb(0, 0, 0);
 }
 .box-container6 img{
     margin-left: 20px;
     margin-top: 25px;
 }
-.box-container7{
+.box-container7 {
     width: 283px;
     height: 291px;
-    transition: all .6s ease-in-out;
-    cursor: pointer;
     background-color: white;
-    position: absolute;
-    left: 70%;
-    top: 60%;
-    display: flex;
+    transition: all .6s ease-in-out;
     border: 2px solid black;
+    margin: 20px;
+    cursor: pointer;
     box-shadow:-20px 0px  0px rgb(0, 0, 0);
 }
 .box-container7 img{
     margin-left: 20px;
     margin-top: 25px;
 }
+
 .overlay{
     position: absolute;
     top: 0;
@@ -384,6 +361,8 @@ transform: rotate(180deg);
 .box-container7:hover{
     transform: scale(1.1);
 }
+
+
 .circle-btndown{
     position:absolute;
     left: 35px;
@@ -411,7 +390,7 @@ transform: rotate(180deg);
         box-shadow: 0px 10px  5px rgba(0, 0, 0, 0.55);
     }
     .reveal{
-        position: absolute;
+        position: relative;
         transform: translateY(150px);
         opacity: 0;
         transition: all 2s ease;
@@ -445,31 +424,38 @@ and (max-width: 1366px) {
     .box-container1 {
         width: 181px;
         height: 191px;
+        margin: 30px;
     }
     .box-container2 {
         width: 181px;
         height: 191px;
+        margin: 30px;
     }
     .box-container3 {
         width: 181px;
         height: 191px;
+        margin: 30px;
     }
     .box-container4 {
         width: 181px;
         height: 191px;
+        margin: 30px;
     }
     .box-container5 {
         width: 181px;
         height: 191px;
+        margin: 30px;
     
 }
 .box-container6 {
     width: 181px;
     height: 191px;
+    margin: 30px;
 }
 .box-container7 {
     width: 181px;
     height: 191px;
+    margin: 30px;
 }
 .box-container1 img{
     width: 140px;
@@ -511,13 +497,17 @@ and (max-width: 1366px) {
 }
 }
 
-/*-----tablet-----*/
-@media (min-width:321px)and (max-width:768px) {
+
+/*------tablet-------*/
+@media (max-width:968px){
     .container{
         transform:rotate(4deg);
         top:-12px;
         left:75%;
         height:110vh;
+    }
+    video{
+        height: 110vh;
     }
     .Home{
         height:100vh;
@@ -527,10 +517,12 @@ and (max-width: 1366px) {
         height:100vh;
     }
     .name{
-        top:35%;
-        left:6%;
-        width:100px;
-        height:300px;
+        width:500px;
+        margin-left:-190px;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     h1{
         width:500px;
@@ -545,7 +537,9 @@ and (max-width: 1366px) {
         font-size:20px;
     }
     .Links{
-        left:25%;
+    display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .Links a{
         padding:20px;
@@ -637,11 +631,12 @@ and (max-width: 1366px) {
     }
     .circle-btndown {
         top:193%;
-    }  
+    }
 }
 
+
 /*-----mobile------*/
-@media (min-width: 320px) and (max-width: 999px)
+@media only screen and (max-width: 480px)
 {
     .container{
         width:250px;
@@ -700,52 +695,42 @@ and (max-width: 1366px) {
     }
     .skill-page h3{
         font-size:35px;
-        left:25%;
-        top:-19px;
+        left:5%;
+        top:9px;
     }
     .skill-page{
-        height:100vh;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
     }
     .box-container1{
         width:100px;
         height:100px;
-        top:10%;
     }
     .box-container2{
         width:100px;
         height:100px;
-        left:59%;
-        top:10%;
     }
     .box-container3{
         width:100px;
         height:100px;
-        left:10%;
-        top:32%
     }
     .box-container4{
         width:100px;
         height:100px;
-        top:32%;
-        left:59%;
     }
     .box-container5{
         width:100px;
         height:100px;
-        top:54%;
-        left:10%;
     }
     .box-container6{
         width:100px;
         height:100px;
-        top:54%;
-        left:59%;
     }
     .box-container7{
         width:100px;
         height:100px;
-        top:73%;
-        left:40%;
     }
     .box-container1 img{
         width:80px;
@@ -784,8 +769,10 @@ and (max-width: 1366px) {
         margin-top:15px;
         margin-left:10px;
     }
-    .total-con{
-        height: 100vh;
-    }
 }
+
+
+
+
+
 
