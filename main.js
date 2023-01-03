@@ -13,7 +13,7 @@ let h1 = document.getElementById('h1');
             h2.style.marginLeft = value * 1 +'px'
             p.style.marginLeft = value * 0.5 +'px'
             links.style.marginTop = value * 1 + 'px'
-            h3.style.marginTop = value * .4 + 'px'
+
             mail.style.marginTop = value * 4 + 'px'
             
         })
@@ -25,7 +25,7 @@ let h1 = document.getElementById('h1');
             for(var i=0;i<reveals.length;i++){
                 var windowheight = window.innerHeight;
                 var revealtop = reveals[i].getBoundingClientRect().top;
-                var revealpoint = 100;
+                var revealpoint = 90;
 
                 if(revealtop<windowheight-revealpoint){
                     reveals[i].classList.add('active');
