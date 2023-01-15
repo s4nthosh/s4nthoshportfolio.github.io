@@ -371,8 +371,9 @@ and (max-width: 1366px) {
         margin: 20px;
     }
     .box img{
-        width: 80px;
-        height: 80px;
-        padding: 5px 3px;
+        width: 90px;
+        height: 90px;
+        padding: 0px 0px;
+        margin: 5px;
     }
 }
