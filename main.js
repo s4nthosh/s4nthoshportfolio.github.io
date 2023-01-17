@@ -5,7 +5,10 @@ let h1 = document.getElementById('h1');
         let links = document.getElementById('links');
         let mail = document.getElementById('mail');
         
-
+        
+        window.addEventListener('loader',function(){
+            loader.style.display="none";
+        })
 
         window.addEventListener('scroll',function(){
             let value = window.scrollY;
@@ -35,3 +38,9 @@ let h1 = document.getElementById('h1');
                 }
             }
         }
+
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load",function(){
+            loader.style.display="none";
+        })
