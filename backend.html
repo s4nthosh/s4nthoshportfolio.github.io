@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="front.css">
+</head>
+<body>
+    <div class="pro-con">
+        <h1>backend</h1>
+        <h5>* some of the website are not optimize best experince in desktop </h5>
+        <div class="pro-det">
+            <div class="con">soon</div>
+        </div>
+    </div>
+
+
+    <div class="intro">
+            <video src="asserts/gow.mp4" autoplay loop muted width="100%" height="100%"></video>
+    </div>
+    <div class="slider"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+     integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        const tl = gsap.timeline({defaults: {ease: "power1.out"}});
+        tl.to("video",{y:'0',duration: 6, stagger:0.25});
+        tl.to(".slider",{y:"-100%",duration: 1.5,delay:.5})
+        tl.to(".intro",{y:"-100%",duration:1},"-=1.5");
+        
+        
+    </script>
+</body>
+</html>

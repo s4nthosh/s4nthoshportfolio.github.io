@@ -254,6 +254,89 @@ header .content-video{
     background: #e75e4f; 
   }
 
+.projects{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.char{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.vid{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.2;
+    background-color: #000;
+
+    position: absolute;
+}
+.vid video{
+    object-fit: cover;
+}  
+.char h1{
+    color:white;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    text-transform: capitalize;
+    
+}
+.pro-b-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.b-links{
+    padding: 10px 0;
+    margin: 20px  0;
+    transition: .9s ease-in-out;
+}
+.b-links a{
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+    text-transform: capitalize;
+    color: white;
+    padding: 10px 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 3px;
+    
+    
+}
+.b-links:hover{
+    background-color: #e75e4f;
+    transform: translate(8px,-6px);
+    box-shadow: -10px 5px  0px #555ff7;
+    border-radius: 3px;
+}
+.b-links a:hover{
+    border: 1px #555ff7;
+    border-radius: 3px;
+}
+.end{
+    display: flex;
+    justify-content: end;
+    padding: 0 10px;
+}
+.end h5{
+    color: white;
+    cursor: default;
+}
+.end span{
+    color: white;
+    font-size: 15px;
+    padding: 0px 10px;
+    margin-top: -1px;
+    cursor: default;
+}
+
 /*----small screen-----*/
 @media only screen
 and (min-width: 1030px)

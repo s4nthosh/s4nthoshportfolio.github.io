@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Love+Light&family=Luxurious+Script&family=M+PLUS+1&family=Merienda&family=Noto+Nastaliq+Urdu&family=Overpass+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:black;
+    font-family: 'Julius Sans One', sans-serif;
+    overflow: hidden;
+}
+.pro-con{
+    width: 100%;
+    height: 100vh;
+}
+.intro{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    top: 0px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.pro-con h1{
+    color: aliceblue;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: default;
+}
+.pro-con h5{
+    color: white;
+    text-align: end;
+    cursor: default;
+}
+
+.pro-det{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    
+}
+.con{
+    width: 281px;
+    height: 281px;
+    margin: 0 10px;
+    background-color: aliceblue;
+    transition: .9s ease-in-out;
+    border-radius: 3px;
+}
+.con:hover{
+    transform: translate(8px,-6px);
+    box-shadow: -10px 5px  0px #d155f7;
+    border-radius: 3px;
+}
+.con img{
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.slider{
+    background-color: rgb(5, 160, 238);
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    z-index: 10;
+}
+video{
+    width: 100%;
+    height: 100vh;
+    object-fit:cover;
+}

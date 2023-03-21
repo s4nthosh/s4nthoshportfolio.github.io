@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link rel="stylesheet" href="shoe.css">
+</head>
+<body>
+        <div class="Home">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">home</a>
+                    </li>
+                    <li>
+                        <a href="">product</a>
+                    </li>
+                    <li>
+                        <a href="">latest</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="s" data-speed="1" class="name">
+                <h1 >nike</h1>
+            </div>    
+            <div class="con-main">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="con-body first">
+                    <img src="asserts/s.png" data-speed="3" class="h" id="s" width="100%" height="100%">
+                </div>
+                <div class="con-body">
+                    <img src="asserts/x.png" data-speed="3" class="h" id="s" width="100%" height="100%">
+                </div>
+                <div class="con-body">
+                    <img src="asserts/y.png" data-speed="3" class="h" id="s" width="100%" height="100%">
+                </div>
+                <div class="con-body">
+                    <img src="asserts/s.png" data-speed="3" class="h" id="s" width="100%" height="100%">
+                </div>
+            </div>
+            <div class="navigation-manual"> 
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+              </div>
+        </div>
+
+
+
+       <script>
+        document.addEventListener("mousemove",patallax);
+        function patallax(e){
+            this.querySelectorAll('#s').forEach(ly=>{
+                const speed = ly.getAttribute('data-speed')
+
+                const x =(window.innerWidth-e.pageX*speed)/100
+                const y =(window.innerHeight-e.pageY*speed)/100
+
+                ly.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+        };
+        
+       </script> 
+</body>
+</html>
