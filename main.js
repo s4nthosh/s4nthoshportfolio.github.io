@@ -43,4 +43,13 @@ let h1 = document.getElementById('h1');
 
         window.addEventListener("load",function(){
             loader.style.display="none";
-        })
+        });
+        function show(){
+            var content =
+            document.getElementById("h5");
+                if(content.style.display==="block"){
+                    content.style.display="none";
+                }else{
+                    content.style.display="block";
+                }
+           };

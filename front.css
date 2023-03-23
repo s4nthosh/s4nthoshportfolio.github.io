@@ -7,11 +7,11 @@
 body{
     background-color:black;
     font-family: 'Julius Sans One', sans-serif;
-    overflow: hidden;
 }
 .pro-con{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 .intro{
     width: 100%;
@@ -35,8 +35,56 @@ body{
     color: white;
     text-align: end;
     cursor: default;
+    display: none;
+}
+.btn{
+    display: flex;
+    justify-content: end;
+    
+}
+.note{
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    align-items: center;
+    display: flex;
+
+}
+.note span{
+    font-weight: 400;
+    font-size:28px;
+    text-align: center;
+    color: white;
+}
+.note .tooltip{
+    visibility: hidden;
+    font-size: 10px;
+    width: 250px;
+    margin-left: -290px;
+    padding: 5px 0;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #d155f7;
+    transition: .3s ease-in-out;
+
 }
 
+.note .tooltip::after{
+    content: " ";
+    position:absolute;
+    margin-top: -5px;
+    margin-left: 75px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent purple;
+}
+.note:hover .tooltip{
+    visibility: visible;
+    transform:translate(-5px);
+}
 .pro-det{
     display: flex;
     width: 100%;
@@ -68,7 +116,7 @@ body{
 .slider{
     background-color: rgb(5, 160, 238);
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -79,4 +127,22 @@ video{
     width: 100%;
     height: 100vh;
     object-fit:cover;
+}
+
+/*-----mobile------*/
+@media only screen and (max-width: 480px){
+    .pro-con{
+        overflow: scroll;
+    }
+    .pro-det{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        
+    }
+    .con{
+        width: 181px;
+        height: 181px;
+    }
+
 }

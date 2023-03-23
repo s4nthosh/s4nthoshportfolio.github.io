@@ -324,6 +324,7 @@ header .content-video{
     display: flex;
     justify-content: end;
     padding: 0 10px;
+
 }
 .end h5{
     color: white;
@@ -335,6 +336,10 @@ header .content-video{
     padding: 0px 10px;
     margin-top: -1px;
     cursor: default;
+}
+.note{
+    display: flex;
+    justify-content: end;
 }
 
 /*----small screen-----*/
@@ -419,7 +424,7 @@ and (max-width: 1366px) {
         height: 120px;
         padding: 20px 10px;
     }
-   
+    
     
 }
 
